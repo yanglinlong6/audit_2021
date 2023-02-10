@@ -30,14 +30,14 @@ g_dev_audit_dbcfg = {'host': '192.168.3.227', 'port': 3306, 'user': 'dev_admin',
 g_dev_biz_dbcfg = {'host': '192.168.3.227', 'port': 3306, 'user': 'dev_admin', 'passwd': '1f7e1ed2',
                'db': 'glsx_biz_data', 'charset': 'utf8'}
 
-fetchsize = 1000
-env = 'pro'
+fetchsize = 1500
+env = 'dev'
 if env == 'dev':
     g_papdev_dbcfg = {'host': '47.115.93.31', 'port': 3307, 'user': 'user_zhaimx', 'passwd': 'dOCN0L7i',
                       'db': 'glsx_pap', 'charset': 'utf8'}
     g_fmrs_dbcfg = {'host': '47.115.150.194', 'port': 3307, 'user': 'user_zhaimx', 'passwd': 'dOCN0L7i', 'db': 'gps',
                     'charset': 'utf8'}
-    g_gldj_dbcfg = {'host': '47.115.93.31', 'port': 3306, 'user': 'user_zhaimx', 'passwd': 'dOCN0L7i',
+    g_gldj_dbcfg = {'host': '121.37.201.170', 'port': 3306, 'user': 'user_zhaimx', 'passwd': 'dOCN0L7i',
                     'db': 'glsx_dj', 'charset': 'utf8'}
     g_ghdj_dbcfg = {'host': '47.97.203.216', 'port': 3306, 'user': 'user_zhaimx', 'passwd': 'dOCN0L7i', 'db': 'glsx_dj',
                     'charset': 'utf8'}
@@ -56,12 +56,17 @@ if env == 'dev':
     g_audit_dbcfg = {'host': '192.168.3.227', 'port': 3306, 'user': 'dev_admin', 'passwd': '1f7e1ed2',
                        'db': 'glsx_audit', 'charset': 'utf8'}
 
+    g_audit_dbcfg = {'host': '192.168.5.25', 'port': 3310, 'user': 'biz_device_detail', 'passwd': 'M6khz3CQ',
+                       'db': 'device_detail', 'charset': 'utf8'}
+
     g_biz_dbcfg = {'host': '192.168.3.227', 'port': 3306, 'user': 'dev_admin', 'passwd': '1f7e1ed2',
                      'db': 'glsx_biz_data', 'charset': 'utf8'}
 
-    g_glsx_ddh_dbcfg =  {'host': '172.16.0.161', 'port': 3306, 'user': 'user_zhaimx', 'passwd': 'dOCN0L7i', 'db': 'glsx_ddh',
+    g_glsx_ddh_dbcfg =  {'host': '121.37.201.170', 'port': 3306, 'user': 'user_zhaimx', 'passwd': 'dOCN0L7i', 'db': 'glsx_ddh',
                    'charset': 'utf8'}
 
+    g_biz_snmap_dbcfg = {'host': '192.168.5.20', 'port': 3306, 'user': 'biz_glsx_data', 'passwd': 'unEKczDc', 'db': 'glsx_biz_data',
+                    'charset': 'utf8'}
 
     g_presto_host = '192.168.5.35'
     g_presto_port = 9090
@@ -72,11 +77,11 @@ else:
     g_fmrs_dbcfg = {'host': '192.168.5.22', 'port': 3307, 'user': 'data_house_user', 'passwd': 'ZhaiMiAxIg', 'db': 'gps',
                     'charset': 'utf8'}
 
+    #g_gldj_dbcfg = {'host': '172.16.0.161', 'port': 3306, 'user': 'data_house_user', 'passwd': 'ZhaiMiAxIg',
+    #                'db': 'glsx_dj', 'charset': 'utf8'}
+
     g_gldj_dbcfg = {'host': '192.168.5.23', 'port': 3306, 'user': 'data_house_user', 'passwd': 'ZhaiMiAxIg',
                     'db': 'glsx_dj', 'charset': 'utf8'}
-
-    g_ghdj_dbcfg = {'host': '47.97.203.216', 'port': 3306, 'user': 'data_house_user', 'passwd': 'ZhaiMiAxIg', 'db': 'glsx_dj',
-                    'charset': 'utf8'}
 
     g_ghdj_dbcfg = {'host': '47.97.203.216', 'port': 3306, 'user': 'user_zhaimx', 'passwd': 'dOCN0L7i', 'db': 'glsx_dj',
                     'charset': 'utf8'}
@@ -96,10 +101,17 @@ else:
     g_audit_dbcfg = {'host': '192.168.5.20', 'port': 3307, 'user': 'data_house_user', 'passwd': 'ZhaiMiAxIg', 'db': 'glsx_audit',
                     'charset': 'utf8'}
 
+    g_biz_snmap_dbcfg = {'host': '192.168.5.20', 'port': 3306, 'user': 'biz_glsx_data', 'passwd': 'unEKczDc', 'db': 'glsx_biz_data',
+                    'charset': 'utf8'}
+
+    g_biz_dbcfg = {'host': '192.168.5.25', 'port': 3310, 'user': 'biz_device_detail', 'passwd': 'M6khz3CQ', 'db': 'device_detail',
+                    'charset': 'utf8'}
+
     g_biz_dbcfg = {'host': '192.168.5.20', 'port': 3306, 'user': 'biz_glsx_data', 'passwd': 'unEKczDc', 'db': 'glsx_biz_data',
                     'charset': 'utf8'}
 
-    g_glsx_ddh_dbcfg =  {'host': '172.16.0.161', 'port': 3306, 'user': 'user_zhaimx', 'passwd': 'dOCN0L7i', 'db': 'glsx_ddh',
+
+    g_glsx_ddh_dbcfg =  {'host': '192.168.5.5', 'port': 3311, 'user': 'user_zhaimx', 'passwd': 'dOCN0L7i', 'db': 'glsx_ddh',
                    'charset': 'utf8'}
 
     g_presto_host = '192.168.5.35'
@@ -107,11 +119,11 @@ else:
 
 def genRandomTime(actDate):
     '''根据日期生产随机时间'''
-    hour =  random.randint(0,199)%13 +8 #8点开始
+    hour = random.randint(0,199)%13 +8 #8点开始
     munite = random.randint(0,199)%60
     sencond = random.randint(0,199)%60
     strTime = "%s %02d:%02d:%02d"%(actDate,hour,munite,sencond)
-    return  strTime
+    return strTime
 
 
 def getTableSyncLog(auditConn,tblName):
@@ -129,29 +141,29 @@ def getTableSyncLog(auditConn,tblName):
         else:
             ret = int(result[0])
     logger.info("getTableSyncLog tablename=%s result=%d",tblName,ret)
-    return ret
+    return  ret
 
-
-def updateTableSynLog(auditConn, tblName, idx):
+def updateTableSynLog(auditConn,tblName,idx):
     '''更新'''
-    if not auditConn.insert("insert into glsx_sync_log (tblName,synId,createtime,updatetime) values "
-                 "('%s',%d,now(),now()) on duplicate key update synId=values(synId),updatetime=values(updatetime)"%(tblName,idx)):
-        logger.error("updateTableSynLog failed, tblName=%s id=%d", tblName, id)
+    if False == auditConn.insert("insert into glsx_sync_log (tblName,synId,createtime,updatetime) values "
+                                 "('%s',%d,now(),now()) on duplicate key update synId=values(synId),updatetime=values(updatetime)"%(tblName,idx)):
+        logger.error("updateTableSynLog failed, tblName=%s id=%d",tblName,id)
         return
-    logger.info("updateTableSynLog tablename=%s id=%d", tblName, idx)
+    logger.info("updateTableSynLog tablename=%s id=%d",tblName,idx)
 
 
 class DevInfo:
     sn = ''
     merId = 0
     merName = ''
+    activeTime = ''
 
 g_dev_map_dict = {} #全局存储设备映射信息
 def query_cache_dev_mapping():
     '''查询设备映射并缓存起来'''
-    bizDbConn = MySQL(g_dev_biz_dbcfg)
-    sql = "select fakeSn,realSn,merchant_id,merchant_name from device_mapping"
-    if not bizDbConn.query(sql):
+    bizDbConn = MySQL(g_biz_snmap_dbcfg)
+    sql = "select fakeSn,realSn,merchant_id,merchant_name,activeTime from device_mapping"
+    if False == bizDbConn.query(sql):
         logger.error("query_cache_dev_mapping fail,sql=%s",sql)
         return
     result = bizDbConn.fetchAllRows()
@@ -160,9 +172,9 @@ def query_cache_dev_mapping():
         dev.sn = v[0]
         dev.merId = v[2]
         dev.merName = v[3]
+        dev.activeTime = str(v[4])
         g_dev_map_dict[v[1]] = dev
-    logger.info("query_cache_dev_mapping total = %d", len(g_dev_map_dict.keys()))
-
+    logger.info("query_cache_dev_mapping total = %d",len(g_dev_map_dict.keys()))
 
 def sync_car_permanent(dataFrom):
     '''同步常住地'''
@@ -180,11 +192,11 @@ def sync_car_permanent(dataFrom):
                  "merchant_code,pmerchant_name,merchant_id,created_by,created_date,updated_by,updated_date,deleted_flag"
 
     bizscreenConn = MySQL(g_biz_dbcfg)
-    startId = getTableSyncLog(auditConn, tblName)
+    startId = getTableSyncLog(auditConn,tblName)
     count = 0
     while True:
-        sql = "select id,%s from dj_car_permanent where  id > %d and deleted_flag = 'N' order by id limit %d" % (strColunms, startId, fetch)
-        if not srcDbConn.query(sql):
+        sql = "select id,%s from dj_car_permanent where  id > %d and deleted_flag = 'N' order by id limit %d"%(strColunms,startId, fetch)
+        if False == srcDbConn.query(sql):
             logger.error("sync_car_permanent query error, sql=" + sql)
             return
         arrValues = []
@@ -202,7 +214,7 @@ def sync_car_permanent(dataFrom):
             sn = v[1]
             fkInfo = g_dev_map_dict.get(sn,None)
             if fkInfo is None:
-                logger.warning("sync_car_permanent can not find fksn, sn=%s",sn)
+                logger.warn("sync_car_permanent can not find fksn, sn=%s",sn)
                 continue
             sn = fkInfo.sn
             merId = fkInfo.merId
@@ -224,8 +236,7 @@ def sync_car_permanent(dataFrom):
             logger.info ("sync_car_permanent progress count=%d" % count)
             updateTableSynLog(auditConn, tblName, startId)
 
-
-def sync_car_maintain(dataFrom):
+def sync_car_maintain(dataFrom, fromTime):
     '''同步维修保养'''
     fetch = fetchsize
     if dataFrom == 'DJ':#广联嘀加
@@ -236,7 +247,7 @@ def sync_car_maintain(dataFrom):
         tblName = 'dj_car_maintain_gh'
     else:
         return
-    auditConn = MySQL(g_audit_dbcfg)
+    auditConn = MySQL(g_biz_dbcfg)
 
     strColunms = "sn,stand_no,total_mileage,in_time,prev_mileage,first_time," \
                  "remind_type,remind_rule,diff_mileage,diff_time,is_new,number_of_shops," \
@@ -248,8 +259,8 @@ def sync_car_maintain(dataFrom):
     startId = getTableSyncLog(auditConn,tblName)
     count = 0
     while (True):
-        sql = "select id,%s from dj_car_maintain where  id > %d and deleted_flag = 'N' order by id limit %d" % (
-            strColunms,startId, fetch)
+        sql = "select id,%s from dj_car_maintain where in_time>'%s' and id > %d and deleted_flag = 'N' order by id limit %d" % (
+            strColunms, fromTime, startId, fetch)
         if False == srcDbConn.query(sql):
             logger.error("sync_car_maintain query error, sql=" + sql)
             return
@@ -270,6 +281,12 @@ def sync_car_maintain(dataFrom):
             sn = fkInfo.sn
             merId = fkInfo.merId
             merName = fkInfo.merName
+
+            svrtime = str(v[15])
+            strAddSvtTime = str(v[15] + relativedelta(days=-30))
+            if fkInfo.activeTime > strAddSvtTime:
+                logger.warn("sync_car_maintain svrtime=%s activetime=%s",svrtime,fkInfo.activeTime)
+                continue
 
             arr.append(paddstr(sn));arr.append(paddstr(v[2]));arr.append(paddnum(v[3]));arr.append(paddstr(v[4]));
             arr.append(paddnum(v[5]));arr.append(paddstr(v[6]));arr.append(paddnum(v[7]));arr.append(paddnum(v[8]));
@@ -296,9 +313,9 @@ def sync_car_maintain(dataFrom):
         updateTableSynLog(auditConn, tblName, startId)
 
 
-def sync_car_collision(dataFrom):
+def sync_car_collision(dataFrom, fromTime):
     '''同步维修保养'''
-    fetch = 5#fetchsize
+    fetch = fetchsize
     if dataFrom == 'DJ':#广联嘀加
         srcDbConn = MySQL(g_gldj_dbcfg)
         tblName = 'dj_car_collision_gl'
@@ -309,16 +326,15 @@ def sync_car_collision(dataFrom):
         return
     strColunms = "sn,stand_no,collision_time,collision_type,address,longitude,latitude,distance,speed," \
                  "merchant_id,merchant_name,created_by,created_date,updated_by,updated_date,deleted_flag," \
-                 "name,mobile,status,follow_result,follow_time,vehicle_id,shop_warning_id,is_new," \
-                 "number_of_shops,follow_remarks "
+                 "name,mobile,status,follow_result,follow_time,vehicle_id,shop_warning_id,is_new,number_of_shops,follow_remarks "
     auditConn = MySQL(g_audit_dbcfg)
 
     bizscreenConn = MySQL(g_biz_dbcfg)
     startId = getTableSyncLog(auditConn,tblName)
     count = 0
     while (True):
-        sql = "select id,%s from dj_car_collision where id > %d and deleted_flag = 'N' order by id limit %d" % (
-            strColunms,startId, fetch)
+        sql = "select id,%s from dj_car_collision where collision_time>='%s' and id > %d and deleted_flag = 'N' order by id limit %d" % (
+            strColunms, fromTime, startId, fetch)
         if False == srcDbConn.query(sql):
             logger.error("dj_car_collision query error, sql=" + sql)
             return
@@ -338,6 +354,12 @@ def sync_car_collision(dataFrom):
             sn = fkInfo.sn
             merId = fkInfo.merId
             merName = fkInfo.merName
+
+            collitime = str(v[3])
+            if fkInfo.activeTime > collitime:
+                logger.warning("sync_car_collision collitime=%s activetime=%s",collitime,fkInfo.activeTime)
+                continue
+
             #strColunms = "sn,stand_no,collision_time,collision_type,address,longitude,latitude,distance,speed," \
             #"merchant_id,merchant_name,created_by,created_date,updated_by,updated_date,deleted_flag"
             #"name,mobile,status,follow_result,follow_time,vehicle_id,shop_warning_id,is_new,number_of_shops,follow_remarks "
@@ -365,7 +387,7 @@ def sync_car_collision(dataFrom):
         updateTableSynLog(auditConn, tblName, startId)
 
 
-def sync_car_loss_warning(dataFrom):
+def sync_car_loss_warning(dataFrom, fromTime):
     '''流失预计'''
     fetch = fetchsize
     if dataFrom == 'DJ':#广联嘀加
@@ -383,17 +405,17 @@ def sync_car_loss_warning(dataFrom):
     bizscreenConn = MySQL(g_biz_dbcfg)
     startId = getTableSyncLog(auditConn,tblName)
     count = 0
-    while True:
-        sql = "select id,%s from dj_car_loss_warning where id > %d and deleted_flag = 'N' order by id limit %d" % (
-            strColunms,startId, fetch)
-        if not srcDbConn.query(sql):
+    while (True):
+        sql = "select id,%s from dj_car_loss_warning where trigger_time >='%s' and id > %d and deleted_flag = 'N' order by id limit %d" % (
+            strColunms, fromTime, startId, fetch)
+        if False == srcDbConn.query(sql):
             logger.error("sync_car_loss_warning query error, sql=" + sql)
             return
         arrValues = []
         result = srcDbConn.fetchAllRows()
         for v in result:
-            arr = []
-            id = int(v[0])
+            arr = [];
+            id = int(v[0]);
             count += 1
             if id > startId:
                 startId = id
@@ -401,11 +423,16 @@ def sync_car_loss_warning(dataFrom):
             sn = v[1]
             fkInfo = g_dev_map_dict.get(sn,None)
             if fkInfo is None:
-                logger.warning("sync_car_collision can not find fksn, sn=%s",sn)
+                logger.warn("sync_car_loss_warning can not find fksn, sn=%s",sn)
                 continue
             sn = fkInfo.sn
             merId = fkInfo.merId
             merName = fkInfo.merName
+
+            triggtime = str(v[3])
+            if fkInfo.activeTime > triggtime:
+                logger.warn("sync_car_loss_warning triggtime=%s activetime=%s",triggtime,fkInfo.activeTime)
+                continue
 
             arr.append(paddstr(sn));arr.append(paddstr(v[2]));arr.append(paddstr(v[3]));arr.append(paddstr(v[4]))
             arr.append(paddstr(v[5]));arr.append(paddnum(v[6]));arr.append(paddnum(v[7]));arr.append(paddnum(v[8]))
@@ -417,18 +444,18 @@ def sync_car_loss_warning(dataFrom):
             value = "(" + ",".join(arr) + ")"
             arrValues.append(value)
         if len(result) == 0:
-            logger.info("sync_car_loss_warning total count=%d" % count)
+            logger.info ("sync_car_loss_warning total count=%d" % count)
             break
         if len(arrValues) > 0:
             insSql = "insert into dj_car_loss_warning (" + strColunms + ") values " + ",".join(arrValues)
-            if not bizscreenConn.insert(insSql):
-                logger.error("sync_car_loss_warning dst_conn.insert failed:%s" % insSql)
+            if False == bizscreenConn.insert(insSql):
+                logger.error ("sync_car_loss_warning dst_conn.insert failed:%s" % insSql)
                 break
-            logger.info("sync_car_loss_warning progress count=%d" % count)
+            logger.info ("sync_car_loss_warning progress count=%d" % count)
         updateTableSynLog(auditConn, tblName, startId)
 
 
-def sync_car_shop_warning(dataFrom):
+def sync_car_shop_warning(dataFrom, fromTime):
     '''到店'''
     fetch = fetchsize
     if dataFrom == 'DJ':#广联嘀加
@@ -440,41 +467,46 @@ def sync_car_shop_warning(dataFrom):
     else:
         return
 
-    auditConn = MySQL(g_audit_dbcfg)
+    auditConn = MySQL(g_biz_dbcfg)
     strColunms = "sn,stand_no,enter_time,out_time,trigger_time,alarm_type,is_new,last_time_distance,last_time_day," \
                  "merchant_id,merchant_name,created_by,created_date,updated_by,updated_date,deleted_flag," \
                  "plate_number,name,mobile,merchant_type,task_id,vehicle_id"
     bizscreenConn = MySQL(g_biz_dbcfg)
     startId = getTableSyncLog(auditConn,tblName)
     count = 0
-    while True:
-        sql = "select id,%s from dj_car_shop_warning where id > %d and deleted_flag = 'N' order by id limit %d" % (
-            strColunms,startId, fetch)
+    while (True):
+        sql = "select id,%s from dj_car_shop_warning where trigger_time>='%s' and id > %d and deleted_flag = 'N' order by id limit %d" % (
+            strColunms, fromTime, startId, fetch)
         if False == srcDbConn.query(sql):
             logger.error("sync_car_shop_warning query error, sql=" + sql)
             return
         arrValues = []
         result = srcDbConn.fetchAllRows()
         for v in result:
-            arr = []
-            id = int(v[0])
+            arr = [];
+            id = int(v[0]);
             count += 1
             if id > startId:
                 startId = id
 
             sn = v[1]
-            fkInfo = g_dev_map_dict.get(sn, None)
+            fkInfo = g_dev_map_dict.get(sn,None)
             if fkInfo is None:
-                logger.warning("sync_car_shop_warning can not find fksn, sn=%s",sn)
+                logger.warn("sync_car_shop_warning can not find fksn, sn=%s",sn)
                 continue
             sn = fkInfo.sn
             merId = fkInfo.merId
             merName = fkInfo.merName
 
+            triggtime = str(v[3])
+            if fkInfo.activeTime > triggtime:
+                logger.warn("sync_car_shop_warning triggtime=%s activetime=%s",triggtime,fkInfo.activeTime)
+                continue
+
             arr.append(paddstr(sn));arr.append(paddstr(v[2]));arr.append(paddstr(v[3]));arr.append(paddstr(v[4]))
             arr.append(paddstr(v[5]));arr.append(paddnum(v[6]));arr.append(paddnum(v[7]));arr.append(paddnum(v[8]))
             arr.append(paddnum(v[9]));arr.append(paddnum(merId));arr.append(paddstr(merName))
-            arr.append(paddstr(v[12]));arr.append(paddstr(v[13]));arr.append(paddstr(str(v[14])));arr.append(paddstr(v[15]))
+            arr.append(paddstr(v[12]));arr.append(paddstr(v[13]));arr.append(paddstr(str(v[14]))); arr.append(paddstr(v[15]))
             arr.append(paddstr(v[16]))
             arr.append(paddstr(v[17]));arr.append(paddstr(v[18]));arr.append(paddstr(v[19]));arr.append(paddnum(v[20]))
             arr.append(paddstr(v[21]));arr.append(paddnum(v[22]))
@@ -485,7 +517,7 @@ def sync_car_shop_warning(dataFrom):
             break
         if len(arrValues) > 0:
             insSql = "insert into dj_car_shop_warning (" + strColunms + ") values " + ",".join(arrValues)
-            if not bizscreenConn.insert(insSql):
+            if False == bizscreenConn.insert(insSql):
                 logger.error ("sync_car_shop_warning dst_conn.insert failed:%s" % insSql)
                 break
             logger.info ("sync_car_shop_warning progress count=%d" % count)
@@ -510,10 +542,10 @@ def sync_car_days_mileage(dataFrom):
     bizscreenConn = MySQL(g_biz_dbcfg)
     startId = getTableSyncLog(auditConn,tblName)
     count = 0
-    while True:
+    while (True):
         sql = "select id,%s from dj_car_days_mileage where id > %d and deleted_flag = 'N' order by id limit %d" % (
             strColunms,startId, fetch)
-        if not srcDbConn.query(sql):
+        if False == srcDbConn.query(sql):
             logger.error("sync_car_days_mileage query error, sql=" + sql)
             return
         arrValues = []
@@ -529,7 +561,7 @@ def sync_car_days_mileage(dataFrom):
             sn = v[1]
             fkInfo = g_dev_map_dict.get(sn,None)
             if fkInfo is None:
-                logger.warning("sync_car_day_mileage can not find fksn, sn=%s",sn)
+                logger.warn("sync_car_day_mileage can not find fksn, sn=%s",sn)
                 continue
             sn = fkInfo.sn
             merId = fkInfo.merId
@@ -555,7 +587,7 @@ def sync_car_days_mileage(dataFrom):
 
 def sync_sys_merchant(dataFrom):
     '''同步商户数据'''
-    fetch = fetchsize
+    fetch = 5 #fetchsize
     count = 0
     if dataFrom == 'DJ':  # 广联嘀加
         srcDbConn = MySQL(g_gldj_dbcfg)
@@ -567,6 +599,9 @@ def sync_sys_merchant(dataFrom):
     elif dataFrom == 'XY':  # 轩宇
         srcDbConn = MySQL(g_xydj_dbcfg)
         tblName = 'dj_system_merchant_xy'
+    elif dataFrom == 'PRO':
+        srcDbConn = MySQL(g_dev_biz_dbcfg)
+        tblName = 'dj_system_merchant_pro'
     else:
         return
     auditConn = MySQL(g_audit_dbcfg)
@@ -616,6 +651,67 @@ def sync_sys_merchant(dataFrom):
             break
         logger.info("sync_sys_merchant progress count=%d" % count)
         updateTableSynLog(auditConn, tblName, startId)
+
+
+def sync_sys_merchant_to_pro():
+    '''同步商户数据'''
+    fetch = 10
+    count = 0
+    srcDbConn = MySQL(g_dev_biz_dbcfg)
+    strColunms = "merchant_id,account_name,merchant_name,short_name,user_type,merchant_type,contact_name," \
+                 "phone,channel_id,address,province_id,province_name,city_id,city_name,area_id,area_name," \
+                 "lng,lat,shop_photo,business_hours,parent_merchant_id,parent_merchant_name,created_by," \
+                 "created_date,updated_by,updated_date,deleted_flag,settle_merchant_name"#,datafrom
+
+    screenConn = MySQL(g_biz_dbcfg)
+    startId = 0
+    count = 0
+    while (True):
+        #去掉爱卡汽车的
+        sql = "select id,%s from dj_system_merchant where id > %d  " \
+              "and deleted_flag = 'N' order by id limit %d" % (strColunms,startId, fetch)
+        if False == srcDbConn.query(sql):
+            logger.error("sync_sys_merchant_to_pro query error, sql=" + sql)
+            return
+        arrValues = []
+        result = srcDbConn.fetchAllRows()
+        for v in result:
+            arr = [];
+            id = int(v[0]);
+            count += 1
+            if id > startId:
+                startId = id
+
+            provCode = v[11]
+            cityCode = v[13]
+            createDate = v[24]
+            if createDate is None:
+                createDate = 'now()'
+            else:
+                createDate = paddstr(v[24])
+            updateDate = v[26]
+            if updateDate is None:
+                updateDate = 'now()'
+            else:
+                updateDate = paddstr(v[26])
+            arr.append(paddnum(v[1]));arr.append(paddstr(v[2]));arr.append(paddstr(v[3]));arr.append(paddstr(v[4]))
+            arr.append(paddnum(v[5]));arr.append(paddnum(v[6]));arr.append(paddstr(v[7]));arr.append(paddstr(v[8]))
+            arr.append(paddnum(v[9]));arr.append(paddstr(v[10]));arr.append(paddnum(provCode));arr.append(paddstr(v[12]))
+            arr.append(paddnum(cityCode));arr.append(paddstr(v[14]));arr.append(paddnum(v[15]));arr.append(paddstr(v[16]))
+            arr.append(paddnum(v[17]));arr.append(paddnum(v[18]));arr.append(paddstr(v[19]));arr.append(paddstr(v[20]))
+            arr.append(paddnum(v[21]));arr.append(paddstr(v[22]));arr.append(paddstr(v[23]));arr.append(createDate)
+            arr.append(paddstr(v[25]));arr.append(updateDate);arr.append(paddstr(v[27]));arr.append(paddstr(v[28]))
+            value = "(" + ",".join(arr) + ")"
+            arrValues.append(value)
+        if len(arrValues) == 0:
+            logger.info("sync_sys_merchant_to_pro total count=%d" % count)
+            break
+        insSql = "insert into dj_system_merchant (" + strColunms + ") values " + ",".join(arrValues)
+        insSql += " on duplicate key update updated_date=values(updated_date)"
+        if False == screenConn.insert(insSql):
+            logger.error("sync_sys_merchant_to_pro dst_conn.insert failed:%s" % insSql)
+            break
+        logger.info("sync_sys_merchant_to_pro progress count=%d" % count)
 
 
 def sync_system_login_log(dataFrom):
@@ -690,7 +786,8 @@ def sync_audit_dj_device():
     startId = 0
     count = 0
     while True:
-        sql = "select id,%s from audit_insure_order where device_active_time > '2018-01-01 00:00:00' and settle_merchant <> ''" \
+        #device_active_time > '2018-01-01 00:00:00' and
+        sql = "select id,%s from audit_insure_order where   settle_merchant <> ''" \
               "and id > %d order by id limit %d"% (strSrcColunms,startId, fetch)
         if False == srcDbConn.query(sql):
             print ("sync_audit_device fail,sql=%s"%sql)
@@ -747,7 +844,70 @@ def sync_audit_dj_device():
     print("sync_audit_device done total=%d" % count)
 
 
-def sync_audit_record_dj_device():
+
+def sync_dj_device_to_pro():
+    '''同步dj设备'''
+    fetch = fetchsize
+
+    #srcDbConn = MySQL(g_audit_dbcfg)
+    srcDbConn = MySQL(g_dev_biz_dbcfg)
+
+    strColunms = "device_sn,sim_no,active_time,seq_no,period,device_type,effect_date,end_date,device_status," \
+                 "merchant_id,merchant,settle_merchant,created_by,created_date,updated_by,updated_date,deleted_flag,device_active_time"
+    bizDataConn = MySQL(g_biz_dbcfg)
+    #startId = getTableSyncLog(bizDataConn,tblName)
+    #if startId is None:
+    startId = 0
+    count = 0
+    while True:
+        #device_active_time > '2018-01-01 00:00:00' and
+        sql = "select id,%s from dj_device_info where id > %d order by id limit %d"% (strColunms,startId, fetch)
+        if False == srcDbConn.query(sql):
+            print ("sync_dj_device_to_pro fail,sql=%s"%sql)
+            return
+        result = srcDbConn.fetchAllRows()
+        arrValue = []
+        for v in result:
+            count += 1
+            id = int(v[0])
+            if id > startId:
+                startId = id
+            sn = paddstr(v[1])
+            sim = paddstr(v[2])
+            activeTime = paddstr(str(v[3]))
+            seqno = paddstr(v[4])
+            period = paddnum(v[5])
+            devtype = paddnum(v[6])
+            effectDate = paddstr(v[7])
+            endDate = paddstr(v[8])
+            status = paddstr(v[9])
+            merchant = paddstr(v[11])
+            merchantId = paddnum(v[10])
+            settleMer = paddstr(v[12])
+            createBy = paddstr(v[13])
+            createDate = paddstr(v[14])
+            updateBy = paddstr(v[15])
+            updateDate = paddstr(v[16])
+            delFlag = paddstr(v[17])
+            devActiTime = paddstr(v[18])
+            #strColunms = "device_sn,sim_no,active_time,seq_no,period,device_type,effect_date,end_date,device_status," \
+            #             "merchant_id,merchant,settle_merchant,created_by,created_date,updated_by,updated_date,deleted_flag"
+            strValue = "(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)"%(
+                sn,sim,activeTime,seqno,period,devtype,effectDate,endDate,status,merchantId,merchant,
+                settleMer,createBy,createDate,updateBy,updateDate,delFlag,devActiTime)
+            arrValue.append(strValue)
+        if len(arrValue) == 0:
+            break
+        insertSql = "insert into dj_device_info (%s) VALUES %s" % (strColunms,','.join(arrValue))
+        if False == bizDataConn.insert(insertSql):
+            print ("sync_dj_device_to_pro fail, sql=%s"%insertSql)
+            return
+        print ("sync_dj_device_to_pro progress count=%d"%count)
+    print("sync_dj_device_to_pro done total=%d" % count)
+
+
+
+def sync_audit_record_dj_device(type = 6):
     '''同步dj设备'''
     fetch = fetchsize
 
@@ -762,8 +922,13 @@ def sync_audit_record_dj_device():
     #if startId is None:
     startId = 0
     count = 0
+    if type == 6:
+        tableName = 'audit_record_device'
+    elif type == 66:
+        tableName = 'audit_record_device_66'
     while True:
-        sql = "select id,%s from audit_record_device where settle_merchat is not null  and id > %d order by id limit %d"% (strSrcColunms,startId, fetch)
+        sql = "select id,%s from %s where settle_merchat is not null  and id > %d order by id limit %d"% \
+              (strSrcColunms,tableName,startId, fetch)
         if False == srcDbConn.query(sql):
             print ("sync_audit_record_dj_device fail,sql=%s"%sql)
             return
@@ -779,7 +944,7 @@ def sync_audit_record_dj_device():
             activeTime = paddstr(str(v[3]))#genRandomTime(str(v[3])[0:10])
             seqno = paddstr('')
             period = paddnum(36)
-            devtype = paddnum(6)
+            devtype = paddnum(type)
             effectDate = paddstr(str(v[3]))
             endDate =  paddstr(str(v[3] + relativedelta(months=36)))
             status = paddstr(2)
@@ -1036,14 +1201,23 @@ def merchant_adjust():
             count += 1
             provCode = v[11]
             cityCode = v[13]
-
+            createDate = v[24]
+            if createDate is None:
+                createDate = 'now()'
+            else:
+                createDate = paddstr(v[24])
+            updateDate = v[26]
+            if updateDate is None:
+                updateDate = 'now()'
+            else:
+                updateDate = paddstr(v[26])
             arr.append(paddnum(v[1]));arr.append(paddstr(v[2]));arr.append(paddstr(v[3]));arr.append(paddstr(v[4]))
             arr.append(paddnum(v[5]));arr.append(paddnum(v[6]));arr.append(paddstr(v[7]));arr.append(paddstr(v[8]))
             arr.append(paddnum(v[9]));arr.append(paddstr(v[10]));arr.append(paddnum(provCode));arr.append(paddstr(v[12]))
             arr.append(paddnum(cityCode));arr.append(paddstr(v[14]));arr.append(paddnum(v[15]));arr.append(paddstr(v[16]))
             arr.append(paddnum(v[17]));arr.append(paddnum(v[18]));arr.append(paddstr(v[19]));arr.append(paddstr(v[20]))
-            arr.append(paddnum(v[21]));arr.append(paddstr(v[22]));arr.append(paddstr(v[23]));arr.append(paddstr(v[24]))
-            arr.append(paddstr(v[25]));arr.append(paddstr(v[26]));arr.append(paddstr(v[27]));
+            arr.append(paddnum(v[21]));arr.append(paddstr(v[22]));arr.append(paddstr(v[23]));arr.append(createDate)
+            arr.append(paddstr(v[25]));arr.append(updateDate);arr.append(paddstr(v[27]));
             arr.append(paddstr(setlleName))
             value = "(" + ",".join(arr) + ")"
             arrValues.append(value)
@@ -1052,15 +1226,13 @@ def merchant_adjust():
             logger.warn("merchant_adjust merId = %d merName=%s fail=%s",merId,merName,fail)
             continue
 
-        '''
+
         insSql = "insert into dj_system_merchant (" + strColunms + ",settle_merchant_name" + ") values " + ",".join(arrValues)
         insSql += " on duplicate key update updated_date=values(updated_date)"
         if False == probizDbConn.insert(insSql):
             logger.error("sync_sys_merchant dst_conn.insert failed:%s" % insSql)
             break
         logger.info("sync_sys_merchant progress count=%d" % count)
-        '''
-
 
 def device_period_adjust():
     '''设备套餐修正'''
@@ -1088,37 +1260,347 @@ def device_period_adjust():
             logger.info("device_period_adjust total=%d progress=%d",total,count)
     logger.info("device_period_adjust done total=%d progress=%d", total, count)
 
+def adjust_shop_warnning(frommonth,addMonth,total):
+    '''
+    从某个月调整到店到另外一个月
+    frommonth='2020-03'
+    tomonth='2020-09'
+    '''
+    strStart = "%s-01 00:00:00"%frommonth
+    strEnd = "%s-31 00:00:00"%frommonth
+    strColunms = "sn,stand_no,enter_time,out_time,trigger_time,alarm_type,is_new,last_time_distance,last_time_day," \
+                 "merchant_id,merchant_name,created_by,created_date,updated_by,updated_date,deleted_flag," \
+                 "plate_number,name,mobile,merchant_type,task_id,vehicle_id"
+    bizConn = MySQL(g_biz_dbcfg)
+    count = 0
+    sql = "select id,%s from dj_car_shop_warning where trigger_time>='%s' and trigger_time<'%s'" % (strColunms,strStart, strEnd)
+    if False == bizConn.query(sql):
+        logger.error("adjust_shop_warnning query error, sql=" + sql)
+        return
+    result = bizConn.fetchAllRows()
+    idRowsDict = {}
+    for v in result:
+        arr = [];
+        id = int(v[0])
+        sn = v[1]
+        enter_time = str(v[3] +  relativedelta(months=addMonth))
+        out_time = str(v[4] + relativedelta(months=addMonth))
+        trigger_time = str(v[5]+  relativedelta(months=addMonth))
+        created_date =  str(v[13]+  relativedelta(months=addMonth))
+        updated_date =  str(v[15]+  relativedelta(months=addMonth))
+        merId = v[10]
+        merName = v[11]
+        arr.append(paddstr(sn));arr.append(paddstr(v[2]));arr.append(paddstr(enter_time));arr.append(paddstr(out_time))
+        arr.append(paddstr(trigger_time));arr.append(paddnum(v[6]));arr.append(paddnum(v[7]));arr.append(paddnum(v[8]))
+        arr.append(paddnum(v[9]));arr.append(paddnum(merId));arr.append(paddstr(merName))
+        arr.append(paddstr(v[12]));arr.append(paddstr(created_date));arr.append(paddstr(v[14])); arr.append(paddstr(updated_date))
+        arr.append(paddstr(v[16]))
+        arr.append(paddstr(v[17]));arr.append(paddstr(v[18]));arr.append(paddstr(v[19]));arr.append(paddnum(v[20]))
+        arr.append(paddstr(v[21]));arr.append(paddnum(v[22]))
+        value = "(" + ",".join(arr) + ")"
+        #arrValues.append(value)
+        idRowsDict[id] = value
+    if len(result) == 0:
+        logger.info ("sync_car_shop_warning total count=%d" % count)
+        return
+    if len(idRowsDict.keys()) > 0:
+        ids = random.sample(idRowsDict.keys(),total)
+        arrValues = []
+        for idx in ids:
+            count += 1
+            strValue = idRowsDict.get(idx)
+            arrValues.append(strValue)
+            if len(arrValues) >= fetchsize:
+                insSql = "insert into dj_car_shop_warning (" + strColunms + ") values " + ",".join(arrValues)
+                if False == bizConn.insert(insSql):
+                    logger.error("sync_car_shop_warning dst_conn.insert failed:%s" % insSql)
+                    return
+                arrValues = []
+                logger.info("sync_car_shop_warning progress count=%d" % count)
+
+        if len(arrValues) > 0:
+            insSql = "insert into dj_car_shop_warning (" + strColunms + ") values " + ",".join(arrValues)
+            if False == bizConn.insert(insSql):
+                logger.error ("sync_car_shop_warning dst_conn.insert failed:%s" % insSql)
+                return
+        logger.info ("sync_car_shop_warning progress count=%d" % count)
+
+
+def adjust_device_active_time(year=2020,tableName='dj_device_info'):
+    '''根据卡激活时间配置设备激活'''
+    bizConn = MySQL(g_biz_dbcfg)
+    for monthIndx in range(1, 13):
+        #strMonth = "%04d-%02d" % (year, monthIndx)
+        strStartTime = "%04d-%02d-01 00:00:00" % (year, monthIndx)
+        if monthIndx == 12:
+            strEndTime = "%04d-%02d-01 00:00:00" % (year + 1, 1)
+        else:
+            strEndTime = "%04d-%02d-01 00:00:00" % (year, monthIndx + 1)
+        if year == 2020 and monthIndx == 2:
+            unactive_ratio = 0.963
+        elif year == 2020 and monthIndx == 3:
+            unactive_ratio = 0.943
+        elif year == 2020 and monthIndx == 1:
+            unactive_ratio = 0.0413
+        elif year == 2020 and monthIndx == 11:
+            unactive_ratio = 0.0221
+        elif year == 2020 and monthIndx == 12:
+            unactive_ratio = 0.0143
+        else:
+            unactive_ratio = random.uniform(0.45,0.6)
+
+        if tableName != 'dj_device_info':
+            unactive_ratio = 0
+        sql = "select id,active_time from %s where device_type <> 66 and active_time >= '%s' and active_time < '%s'" % (tableName,strStartTime,strEndTime)
+        if False == bizConn.query(sql):
+            logger.error("adjust_device_active_time fail,sql=%s",sql)
+            return
+        result = bizConn.fetchAllRows()
+        idDict = {}
+        for v in result:
+            idx = v[0]
+            activetime = v[1]
+            idDict[idx] = activetime
+
+        total = len(idDict.keys())
+        unactiveTotal = int(total*unactive_ratio)
+        unactiveIds = random.sample(idDict.keys(),unactiveTotal)
+        activeIds = list(set(idDict.keys()).difference(set(unactiveIds)))
+        logger.info("adjust_device_active_time year=%d month=%d total=%d unactive=%d",year,monthIndx,total,len(unactiveIds))
+
+        for idx in unactiveIds:
+            devActiveTime = idDict.get(idx)
+            if year == 2020 and monthIndx in(2,3):
+                addDays = random.randint(60,100)
+            elif year == 2020 and monthIndx == 1:
+                addDays = random.randint(1, 100)
+            elif year == 2019 and monthIndx == 12:
+                addDays = random.randint(1, 32)
+            elif year == 2020 and monthIndx == 11:
+                addDays = random.randint(1,31)
+            elif year == 2020 and monthIndx == 12:
+                day = 31 - devActiveTime.day
+                if day <2:
+                    addDays = 0
+                else:
+                    addDays = random.randint(1,day)
+            else:
+                addDays = random.randint(1,60)
+            if addDays == 0:
+                activeTime = str(devActiveTime)
+            else:
+                devActiveTime = devActiveTime + relativedelta(days=addDays)
+                strDevActiveTime = str(devActiveTime)
+                activeTime = genRandomTime(str(strDevActiveTime)[0:10])
+                endDate = datetime.datetime.strptime(activeTime,"%Y-%m-%d %H:%M:%S") + relativedelta(months=36)
+
+            updateSql = "update %s set device_active_time = '%s',effect_date='%s',end_date='%s' where id = %d"%\
+                        (tableName,activeTime,activeTime,endDate,idx)
+            if bizConn.update(updateSql) == False:
+                logger.error("adjust_device_active_time fail,sql=%s", updateSql)
+                return
+        logger.info("adjust_device_active_time update active=%d done",len(unactiveIds))
+
+
+        for idx in activeIds:
+            strDevActiveTime = str(idDict.get(idx))
+            updateSql = "update %s set device_active_time = '%s' where id = %d"%(tableName,strDevActiveTime,idx)
+            if bizConn.update(updateSql) == False:
+                logger.error("adjust_device_active_time fail,sql=%s", updateSql)
+                return
+        logger.info("adjust_device_active_time update active=%d done",len(activeIds))
+
+    logger.info("adjust_device_active_time %s done",tableName)
+
+
+def sync_car_collision_ddh():
+    '''同步碰撞线索'''
+    ddhConn = MySQL(g_glsx_ddh_dbcfg)
+    screenConn = MySQL(g_audit_dbcfg)
+    strColunms = "sn,name,mobile,collision_time,collision_type,address,longitude,latitude," \
+                 "speed,merchant_id,created_by,created_date," \
+                 "factory_merchant_name,province_merchant_name,city_merchant_name,factory_merchant_id," \
+                 "province_merchant_id,city_merchant_id,merchant_name,province_name,city_name,area_name," \
+                 "datafrom,UPDATED_BY,UPDATED_DATE"
+    sql = "select a.SN,b.USER_NAME,b.MOBILE,a.EVENT_DATE," \
+          "(case when EVENT_TYPE='COLLIDE' then 1 when EVENT_TYPE='SOS' then 6 else 1 end) as colltype," \
+          "a.EVENT_ADDRESS,a.EVENT_LNG,a.EVENT_LAT,a.SPEED,b.MERCHANT_ID,b.CREATED_BY,b.CREATED_DATE,b.FACTORY_MERCHANT_NAME," \
+          "b.PROVINCE_MERCHANT_NAME,b.CITY_MERCHANT_NAME,b.FACTORY_MERCHANT_ID,b.PROVINCE_MERCHANT_ID,b.CITY_MERCHANT_ID," \
+          "b.MERCHANT_NAME,b.PROVINCE_NAME,b.CITY_NAME,b.AREA_NAME,1 as datafrom,a.UPDATED_BY,a.UPDATED_DATE from ddh_rescue_event a " \
+          "LEFT JOIN  ddh_rescue_user_info b on(a.ID = b.EVENT_ID) where merchant_id is not null "
+    if False == ddhConn.query(sql):
+        print ("sync_car_collision_ddh fail,sql=%s"%sql)
+        return
+    result = ddhConn.fetchAllRows()
+    arrValues = []
+    count = 0
+    for v in result:
+        sn = v[0]
+        eventDate = str(v[3])
+        merchantId = v[9]
+        merchantName = v[18]
+
+        createDate = str(v[11])
+        updateDate = str(v[24])
+
+        fkInfo = g_dev_map_dict.get(sn, None)
+        if fkInfo is None:
+            logger.warning("sync_car_permanent can not find fksn, sn=%s", sn)
+            continue
+        sn = fkInfo.sn
+        merId = fkInfo.merId
+        merName = fkInfo.merName
+
+
+        strValue = "(%s,%s,%s,%s,%s,%s,%s,%s," \
+                   "%s,%s,%s,%s,%s,%s,%s,%s," \
+                   "%s,%s,%s,%s,%s,%s,%s,%s,%s)"%\
+                   (paddstr(sn),paddstr(v[1]),paddstr(v[2]),paddstr(eventDate),paddnum(v[4]),paddstr(v[5]),paddstr(v[6]),paddstr(v[7]),
+                    paddnum(v[8]),paddnum(merId),paddstr(v[10]),paddstr(createDate),
+                    paddstr(v[12]),paddstr(v[13]),paddstr(v[14]),paddnum(v[15]),
+                    paddnum(v[16]),paddnum(v[17]),paddstr(merName),paddstr(v[19]),paddstr(v[20]),paddstr(v[21]),
+                    paddnum(v[22]),paddstr(v[23]),paddstr(updateDate))
+        arrValues.append(strValue)
+        count += 1
+        if len(arrValues) > 100:
+            insSql = "insert into dj_car_collision_new (" + strColunms + ") values " + ",".join(arrValues)
+            if False == screenConn.insert(insSql):
+                print ("sync_car_collision_ddh dst_conn.insert failed:%s" % insSql)
+                return
+            print ("sync_car_collision_ddh count=%d"%count)
+            arrValues = []
+    if len(arrValues) > 0:
+        insSql = "insert into dj_car_collision_new (" + strColunms + ") values " + ",".join(arrValues)
+        if False == screenConn.insert(insSql):
+            print ("sync_car_collision_ddh dst_conn.insert failed:%s" % insSql)
+            return
+    print ("sync_car_collision_ddh done count=%d" % count)
+
+
+def sync_ddh_rescue_event(fromTime):
+    '''同步救援事件'''
+    ddhConn = MySQL(g_glsx_ddh_dbcfg)
+    screenConn = MySQL(g_biz_dbcfg)
+    strColunms = "SN,DEVICE_NAME,EVENT_TYPE,EVENT_ADDRESS,EVENT_LNG,EVENT_LAT,EVENT_DATE,SPEED,HANDLE_RESULT," \
+                 "HANDLE_DATE,REMIND_FLAG,SYNC_FLAG,SYNC_DATE,REMARK,ACCURATE,CREATED_BY," \
+                 "CREATED_DATE,UPDATED_BY,UPDATED_DATE,DELETED_FLAG,is_emphasis_merchant," \
+                 "is_show,DEVICE_ID,TYPE_ID,model_result"
+
+    sql = "select " + strColunms + " from ddh_rescue_event where EVENT_DATE>'%s' " % fromTime
+    if False == ddhConn.query(sql):
+        print ("sync_ddh_rescue_event fail,sql=%s"%sql)
+        return
+    result = ddhConn.fetchAllRows()
+    arrValues = []
+    total = 0
+    for v in result:
+        sn = v[0]
+        fkInfo = g_dev_map_dict.get(sn, None)
+        if fkInfo is None:
+            logger.warning("sync_ddh_rescue_event can not find fksn, sn=%s", sn)
+            continue
+        sn = paddstr(fkInfo.sn)
+        # merId = fkInfo.merId
+        # merName = fkInfo.merName
+        devName = paddstr(v[1])
+        eventType = paddstr(v[2])
+        eventAddr = paddstr(v[3])
+        eventLng = paddstr(v[4])
+        eventLat = paddstr(v[5])
+        eventDate = paddstr(v[6])
+        speed = paddnum(v[7])
+        handleResult = paddnum(v[8])
+        handleDate = paddstr(v[9])
+        remindFlag = paddstr(v[10])
+        syncFlag = paddnum(v[11])
+        syncDate = paddstr(v[12])
+        remark = paddstr(v[13])
+        accurate = paddnum(v[14])
+        createdBy0 = v[15]
+        createdBy = paddstr(fkInfo.sn)
+        createdDate = paddstr(v[16])
+        updateBy0 = v[17]
+        if createdBy0 == updateBy0:
+            updateBy = paddstr(fkInfo.sn)
+        else:
+            updateBy = paddstr(updateBy0)
+        updateDate = paddstr(v[18])
+        delFlag = paddstr(v[19])
+        isEmMer = paddnum(v[20])
+        isShow = paddnum(v[21])
+        deviceId = paddnum(v[22])
+        typeId = paddnum(v[23])
+        modelRes = paddstr(v[24])
+        strValue = f"({sn},{devName},{eventType},{eventAddr},{eventLng},{eventLat},{eventDate},{speed},{handleResult}," \
+                   f"{handleDate},{remindFlag},{syncFlag},{syncDate},{remark},{accurate},{createdBy},{createdDate}," \
+                   f"{updateBy},{updateDate},{delFlag},{isEmMer},{isShow},{deviceId},{typeId},{modelRes})"
+        arrValues.append(strValue)
+        total += 1
+        if len(arrValues) >= 1000:
+            insSql = "insert into ddh_rescue_event (" + strColunms + ") values " + ",".join(arrValues)
+            if not screenConn.insert(insSql):
+                print ("sync_ddh_rescue_event dst_conn.insert failed:%s" % insSql)
+                return
+            print("sync_ddh_rescue_event count=%d" % total)
+            arrValues = []
+    if len(arrValues) > 0:
+        insSql = "insert into ddh_rescue_event (" + strColunms + ") values " + ",".join(arrValues)
+        if False == screenConn.insert(insSql):
+            print ("sync_ddh_rescue_event dst_conn.insert failed:%s" % insSql)
+            return
+    print ("sync_ddh_rescue_event done count=%d" % total)
+
+
+def sync_cluses(fromTime='2022-03-01'):
+    ''''''
+    #sync_car_collision('DJ', fromTime)
+    #sync_car_collision('GUARD', fromTime)
+
+    #ync_car_loss_warning('DJ', fromTime)
+    #ync_car_loss_warning('GUARD', fromTime)
+
+    #sync_car_maintain('DJ', fromTime)
+    sync_car_maintain('GUARD', fromTime)
+
+    #sync_car_shop_warning('DJ', fromTime)
+    sync_car_shop_warning('GUARD', fromTime)
+
+    #sync_car_permanent('DJ', fromTime)
+    #sync_car_permanent('GUARD', fromTime)
+
+    sync_ddh_rescue_event(fromTime)
+
 
 if __name__ == "__main__":
-    query_cache_dev_mapping()
+    ''''''
+    #query_cache_dev_mapping()
+    sync_cluses(fromTime='2022-03-01')
+
+    #ync_car_collision_ddh()
+
+    #sync_ddh_rescue_event()
+
+    #query_cache_dev_mapping()
+
     #sync_car_collision('DJ')
-    #sync_car_collision('GUARD')
 
-    #sync_car_loss_warning('DJ')
-    #sync_car_loss_warning('GUARD')
+    #adjust_shop_warnning('2020-03',6,30500)
+    #adjust_shop_warnning('2020-04',6,57000)
+    #adjust_shop_warnning('2020-05',6,31000)
 
-    sync_car_maintain('DJ')
-    #sync_car_maintain('GUARD')
+    #sync_sys_merchant('GUARD')
+    #sync_sys_merchant('DJ')
+    #sync_sys_merchant('XY')
 
-    #sync_car_shop_warning('DJ')
-    #sync_car_shop_warning('GUARD')
+    #sync_sys_merchant_to_pro()
 
-    #sync_car_permanent('DJ')
-    #sync_car_permanent('GUARD')
-
-    #sync_car_days_mileage('DJ')
-    #sync_car_days_mileage('GUARD')
-
-    '''
-    sync_sys_merchant('GUARD')
-    sync_sys_merchant('DJ')
-    sync_sys_merchant('XY')
-    '''
 
     #sync_system_login_log('DJ')
     #sync_system_login_log('GUARD')
 
     #sync_audit_dj_device()
+
+    #sync_dj_device_to_pro()
 
     #period = rrule.rrule(freq=rrule.MONTHLY, dtstart=parser.parse('2018-12-11 00:00:00'), until=parser.parse("2019-02-11 00:00:00"))
     #print (period.count())
@@ -1139,5 +1621,6 @@ if __name__ == "__main__":
 
     #device_period_adjust()
 
-    #sync_audit_record_dj_device()
+    #sync_audit_record_dj_device(6)
+    #sync_audit_record_dj_device(66)
 
